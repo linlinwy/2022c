@@ -9,7 +9,7 @@
 
 # week06
 ## step01-0
-考試九九乘法表 考前複習 考後檢討同學出錯的狀況
+#考試九九乘法表 考前複習 考後檢討同學出錯的狀況
 ````cpp
 {
     for(int a=1; a<=9; a++)
@@ -23,7 +23,7 @@
 }
 ```
 ## step01-1
-畫星星-金字塔
+#畫星星-金字塔
 使用的技巧,是用左手i來建立鷹架
 ```cpp
 
@@ -44,7 +44,7 @@ int main()
 //*    鷹架1
 ```
 ## week01-2 
-五層樓星星
+#五層樓星星
 #include <stdio.h>
 int main()
 {
@@ -63,7 +63,7 @@ int main()
 }
 ```
 ## week01-3 
-最大公因數 暴力法
+#最大公因數 暴力法
 #include <stdio.h>
 int main()
 {
@@ -83,7 +83,7 @@ int main()
 }
 ```
 ## week01-4 
-輾轉相除
+#輾轉相除
 #include <stdio.h>
 int main()
 {
@@ -103,7 +103,7 @@ int main()
 }
 ```
 ## week01-5 
-除了0以外都成立
+#除了0以外都成立
 #include <stdio.h>
 int main()
 {
