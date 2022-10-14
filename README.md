@@ -22,7 +22,8 @@
     }
 }
 ```
-## step01-1_畫星星-金字塔
+## step01-1
+畫星星-金字塔
 使用的技巧,是用左手i來建立鷹架
 ```cpp
 
@@ -42,7 +43,8 @@ int main()
 //**   鷹架2
 //*    鷹架1
 ```
-## week01-2 五層樓星星
+## week01-2 
+五層樓星星
 #include <stdio.h>
 int main()
 {
@@ -60,7 +62,8 @@ int main()
     }
 }
 ```
-## week01-3 最大公因數 暴力法
+## week01-3 
+最大公因數 暴力法
 #include <stdio.h>
 int main()
 {
@@ -79,7 +82,8 @@ int main()
 
 }
 ```
-## week01-4 輾轉相除
+## week01-4 
+輾轉相除
 #include <stdio.h>
 int main()
 {
@@ -98,7 +102,8 @@ int main()
 
 }
 ```
-## week01-5 除了0以外都成立
+## week01-5 
+除了0以外都成立
 #include <stdio.h>
 int main()
 {
