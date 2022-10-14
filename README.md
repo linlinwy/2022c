@@ -41,7 +41,7 @@ int main()
 //***  鷹架3
 //**   鷹架2
 //*    鷹架1
-
+```
 ## week01-2 五層樓星星
 #include <stdio.h>
 int main()
@@ -59,7 +59,7 @@ int main()
         printf(" 鷹架:%d樓 %d空格 %d星\n", i, space, star);
     }
 }
-
+```
 ## week01-3 最大公因數 暴力法
 #include <stdio.h>
 int main()
@@ -78,6 +78,7 @@ int main()
     printf("中的數字是:%d",b);
 
 }
+```
 ## week01-4 輾轉相除
 #include <stdio.h>
 int main()
@@ -96,6 +97,7 @@ int main()
     printf("中的數字是:%d",b);
 
 }
+```
 ## week01-5 除了0以外都成立
 #include <stdio.h>
 int main()
