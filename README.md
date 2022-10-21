@@ -42,6 +42,7 @@ int main()
 //**   鷹架2
 //*    鷹架1
 ```
+
 ## week01-2 五層樓星星
 ```cpp
 #include <stdio.h>
@@ -118,5 +119,20 @@ int main()
     if(4) printf("4成立\n");
     if(999) printf("999成立\n");
     if("a==0") printf("不管甚麼東西，幾乎都成立\n");
+}
+```
+
+
+## week  07-1
+
+```cpp
+#include <stdio.h>
+int main()
+{
+    int n =1234567812345678;
+    printf("%d\n",n);
+
+    long long int a= 1234567812345678;
+    printf("%lld\n",a);
 }
 ```
