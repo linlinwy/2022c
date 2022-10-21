@@ -170,3 +170,39 @@ int main()
     }
     printf("答案是:%lld\n",b);
 }
+
+## week 07-4 倒過來剝皮
+
+```cpp
+#include <stdio.h>
+int main()
+{
+    int n=123456789;
+    printf("個位數是%d\n",n%10);
+    n = n/10;
+
+    printf("個位數是%d\n",n%10);
+    n = n/10;
+
+    printf("個位數是%d\n",n%10);
+    n = n/10;
+
+    printf("個位數是%d\n",n%10);
+    n = n/10;
+
+    printf("個位數是%d\n",n%10);
+    n = n/10;
+
+    printf("個位數是%d\n",n%10);
+    n = n/10;
+
+    printf("個位數是%d\n",n%10);
+    n = n/10;
+
+    printf("個位數是%d\n",n%10);
+    n = n/10;
+
+    printf("個位數是%d\n",n%10);
+    n = n/10;
+}
+```
