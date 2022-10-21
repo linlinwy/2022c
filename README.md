@@ -206,3 +206,17 @@ int main()
     n = n/10;
 }
 ```
+## week 07-4c 迴圈，倒過來剝皮
+
+```cpp
+#include <stdio.h>
+int main()
+{
+    int n=1234;
+
+    while(n>0){
+        printf("­Ó¦ì¼Æ¬O:%d\n",n%10);
+        n=n/10;
+    }
+}
+```
