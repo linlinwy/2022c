@@ -220,3 +220,63 @@ int main()
     }
 }
 ```
+## week08-2 while迴圈畫三角形
+```cpp
+#include <stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+
+    int i=1;
+    while(i<=n)
+    {
+        int k=1;
+        while(k<=n)
+        {
+            if(k<=n-i) printf(" ");
+            else printf("*");
+            k++;
+        }
+        printf("\n");
+        i++;
+    }
+}
+```
+## week08-3 判斷質數
+```cpp
+#include <stdio.h>
+int main()
+{
+    printf("要判斷你輸入的數字是不是恨孤獨的質樹:");
+    int n;
+    scanf("%d",&n);
+
+    int bad=0;
+    for(int i=2; i<n; i++)
+    {
+        if(n%i==0) bad=1;
+    }
+        if(bad==0) printf("%d是質數(沒有壞掉的)",n);
+        else  printf("%d不是質數(早就壞了)",n);
+}
+```
+## week08-4 列出所有質數
+```cpp
+#include <stdio.h>
+int main()
+{
+    int a;
+    scanf("%d",&a);
+
+    for(int n=2; n<=a; n++)
+    {
+        int bad=0;
+        for(int i=2; i<n; i++)
+        {
+            if(n%i==0) bad=1;
+        }
+        if(bad==0) printf("%d ",n);
+    }
+}
+```
