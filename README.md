@@ -220,6 +220,25 @@ int main()
     }
 }
 ```
+## week08-1 用兩個for迴圈畫三角形
+```cpp
+#include <stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+
+    for(int i=1; i<=n; i++)
+    {
+        for(int k=1; k<=n; k++)
+        {
+            if(k<=n-i) printf(" ");
+            else printf("*");
+        }
+        printf("\n");
+    }
+}
+```
 ## week08-2 while迴圈畫三角形
 ```cpp
 #include <stdio.h>
