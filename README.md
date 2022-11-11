@@ -313,7 +313,7 @@ int main()
 
 }
 ```
-##week10-2 倒過來的迴圈
+## week10-2 倒過來的迴圈
 ```cpp
 #include <stdio.h>
 int main()
