@@ -708,3 +708,45 @@ int main()
     printf("main()中 a是:%d\n",a);
 }
 ```
+## week14-3
+```cpp
+#include <stdio.h>
+int n=30;
+int funcA(int a, int b)
+{
+    printf("funcA()的a,b是:%d %d\n",a,b);
+    return a+b;
+}
+int funcB(int n)
+{
+    printf("funcB()的n是:%d\n",n);
+    int ans=funcA(n,n);
+    return ans;
+}
+int main()
+{
+    int a=10, b=20;
+    funcB(b);
+    funcA(a,b);
+    printf("main()的a,b是:%d %d\n",a,b);
+}
+```
+## week14-5
+```cpp
+#include <stdio.h>
+int gcd(int a,int b)
+{
+    if(a==0) return b;
+    if(b==0) return a;
+
+    return gcd(b,a%b);
+}
+int main()
+{
+    int a,b;
+    scanf("%d%d",&a,&b);
+
+    int ans = gcd(a,b);
+    printf("%d",ans);
+}
+```
