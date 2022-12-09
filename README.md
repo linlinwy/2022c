@@ -675,7 +675,7 @@ int main()
 }
 ```
 ## week14-1
-```
+```cpp
 #include <stdio.h>
 int a=10;
 void func()
@@ -689,9 +689,9 @@ int main()
     func();
     printf("main()中 a是:%d\n",a);
 }
-```cpp
-## week14-2
 ```
+## week14-2
+```cpp
 #include <stdio.h>
 int a=10;
 void func()
@@ -707,4 +707,4 @@ int main()
     func();
     printf("main()中 a是:%d\n",a);
 }
-```cpp
+```
