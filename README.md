@@ -707,3 +707,4 @@ int main()
     func();
     printf("main()中 a是:%d\n",a);
 }
+```cpp
