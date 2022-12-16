@@ -752,7 +752,7 @@ int main()
 
 }
 ```
-## week14-5
+## week14-5 函式
 ```cpp
 #include <stdio.h>
 int gcd(int a,int b)
