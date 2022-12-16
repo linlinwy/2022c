@@ -771,7 +771,7 @@ int main()
     printf("%d",ans);
 }
 ```
-##week15-1 複習浮點數
+## week15-1 複習浮點數
 ```cpp
 #include <stdio.h>
 int main()
@@ -785,7 +785,7 @@ int main()
     printf("%s 字串\n",line);
 }
 ```
-##week15-2 單引號
+## week15-2 單引號
 #include <stdio.h>
 int main()
 {
@@ -800,7 +800,7 @@ int main()
     printf("%c : %d\n",'a','a');
 }
 ```
-##week15-3 單引號
+## week15-3 單引號
 ```cpp
 #include <stdio.h>
 int main()
