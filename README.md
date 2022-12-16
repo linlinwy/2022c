@@ -785,3 +785,38 @@ int main()
     printf("%s 字串\n",line);
 }
 ```
+##week15-2 單引號
+#include <stdio.h>
+int main()
+{
+    printf("%c : %d\n",65,65);
+    printf("%c : %d\n",66,66);
+    printf("%c : %d\n",67,67);
+    printf("%c : %d\n",'A','A');
+    printf("%c : %d\n",'B','B');
+    printf("%c : %d\n",'C','C');
+    printf("上面用數字 64 及單引號'a'的結果都一樣\n");
+    printf("%c : %d\n",97,97);
+    printf("%c : %d\n",'a','a');
+}
+```
+##week15-3 單引號
+```cpp
+#include <stdio.h>
+int main()
+{
+    printf("=%c=%d=\n",65,65);
+    printf("=%c=%d=\n",'+','+');
+    printf("=%c=%d=\n",'\n','\n');
+    printf("=%c=%d=\n",'\t','\t');
+    printf("=%c=%d=\n",'\0','\0');
+
+    char line[]="Hello World AAA";
+
+    for(int i=0;      ;i++){
+        char c=line[i];
+        if(c==0) break;
+        printf("=%c",c);
+    }
+}
+```
