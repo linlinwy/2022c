@@ -786,6 +786,7 @@ int main()
 }
 ```
 ## week15-2 單引號
+```cpp
 #include <stdio.h>
 int main()
 {
