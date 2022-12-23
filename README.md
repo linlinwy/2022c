@@ -840,3 +840,21 @@ int main()
     }
 }
 ```
+## week16-1 scanf()的細節
+```cpp
+#include <stdio.h>
+int main()
+{
+    char line[300];
+    char * p=line;
+
+    int n=10;
+    int *p2=&n;
+
+    float f=3.1415926;
+    float *p3=&f;
+    ///scanf("%d",&n);
+    char c='A';
+    char *p4=&c;
+}
+```
