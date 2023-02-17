@@ -875,7 +875,7 @@ int main()
     printf("比較字串strcmp(line,line2)得到%d\n",strcmp(line,line2));
 }
 ```
-##week16-3 股票
+## week16-3 股票
 ```cpp
 #include <stdio.h>
 int a[2000];
@@ -904,7 +904,7 @@ int main()
 	printf("最大利潤=%d-%d=%d\n",a[sell],a[buy],max);
 }
 ```
-##week01-1 愛心
+## week01-1 愛心
 ```cpp
 //(x*x+y*y-1)^3-x*x*y*y*y<0裡面
 size(400,400);//視窗大小
@@ -921,7 +921,7 @@ for(int i=0; i<400; i++){
   }
 }
 ```
-##week01-2 先讀入字母 在讀入整數
+## week01-2 先讀入字母 在讀入整數
 ```cpp
 #include <stdio.h>
 int main()
@@ -937,7 +937,7 @@ int main()
     printf("你輸入 %d\n",a);
 }
 ```
-##week01-3 字串
+## week01-3 字串
 ```cpp
 #include <stdio.h>
 int main()
