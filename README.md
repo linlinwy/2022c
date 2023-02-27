@@ -971,3 +971,101 @@ int main()
 	printf("Total: %d\n",total);
 }
 ```
+## week02-1 while + scanf() ==2
+```cpp
+#include <stdio.h>
+
+int main()
+{
+	int a,b;
+	while( scanf("%d%d",&a,&b)==2){
+		int ans = b-a;
+
+		printf("%d\n",ans);
+	}
+
+
+}
+```
+## week02-2 if() to compare big and small
+```cpp
+#include <stdio.h>
+//10 12
+//10 14
+//100 200
+//300 400
+//500 300
+
+int main()
+{
+	int a,b;
+	while( scanf("%d%d",&a,&b)==2){
+		int ans = b-a;
+		if(a>b) ans=a-b;
+		if(b>a) ans=b-a;
+		printf("%d\n",ans);
+	}
+
+
+}
+```
+## week02-3 long long int
+```cpp
+#include <stdio.h>
+
+int main()
+{
+
+    long long int a,b;
+///很長很長的整數 改用long long int
+	while( scanf("%lld%lld",&a,&b)==2){
+		long long int ans =b-a;
+		if(ans<0) ans=a-b;
+		///if(a>b) ans=a-b;
+		///if(b>a) ans=b-a;		
+    printf("%lld\n",ans);
+   }
+}
+
+///32位元進入64位元，發生IntelAMD之爭
+///64 x86 程式可互相相容 (int用32位元)
+///42,9496,7296 42億
+```
+## week02-4 c++
+```cpp
+#include <iostream> //#include <stdio.h>
+
+
+int main()
+{
+	long long int a,b;
+
+	while( std::cin >> a>>b){
+//while(scanf ("%lld%lld",&a,&b)==2){
+		long long int ans = a-b;
+		if(ans<0) ans = b-a;
+		//printf("%lld\n",ans);
+		std::cout << ans << std::endl;
+	}
+
+
+}
+```
+## week02-5  c++使用 name
+```cpp
+#include <iostream>
+using namespace std
+
+int main()
+{
+	long long int a,b;
+
+	while(cin >> a>>b){
+		long long int ans = a-b;
+		if(ans<0) ans = b-a;
+		cout << ans << endl;
+	}
+
+
+}
+```
