@@ -1099,3 +1099,66 @@ int main()
     else printf("他是迴文\n");
 }
 ```
+## week03-3
+```cpp
+#include <stdio.h>
+char mirrored_char (char c)
+{
+    if(C=='A') return 'A';
+    else if(C=='E') return '3';
+    else if(C=='H') return 'H';
+    else if(C=='I') return 'I';
+    //else if(C=='I') return 'I';
+    else if(C=='J') return 'L';
+    else if(C=='L') return 'J';
+    else if(C=='M') return 'M';
+    else if(C=='O') return 'O';
+    else if(C=='S') return 'I';
+    else if(C=='T') return 'T';
+    else if(C=='U') return 'U';
+    else if(C=='V') return 'V';
+    else if(C=='W') return 'W';
+    else if(C=='X') return 'X';
+    else if(C=='Y') return 'Y';
+    else if(C=='2') return '5';
+    else if(C=='1') return '1';
+    else if(C=='2') return 'S';
+    else if(C=='3') return 'E';
+    else if(C=='5') return 'Z';
+    else if(C=='8') return '8';
+    else return ' ';
+}
+int main()
+{
+    
+}
+```
+## week03-4 鏡像
+```cpp
+#include <stdio.h>
+#include <string.h>
+char mirrored_char(char c)
+{
+    char line1 []="ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789";
+    char line2 []="A   3  HIL JM O   2TUVWXY51SE Z  8 ";
+    for(int i=0; line1[i]!=0; i++){
+        if(line1[i]==c) return line2[i];
+    }
+    return ' ';
+
+}
+int main()
+{
+    char line[30];
+    scanf("%s",line);
+    int N=strlen(line);
+    int bad=0;
+    for(int i=0; i<N; i++){
+        char c1=line[i];
+        char c2= mirrored_char(line[N-1-i]);
+        if(c1!=c2) bad =1;
+    }
+    if(bad ==0) printf("她是鏡像字\n");
+    else printf("他不是鏡像字\n");
+}
+```
