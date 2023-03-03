@@ -1069,3 +1069,33 @@ int main()
 
 }
 ```
+## week03-1
+```cpp
+#include <stdio.h>
+int main()
+{
+	char line [30];
+	while(scanf("%s",line)==1){
+		printf("%s",line);
+		printf(" -- is not a palindromes.\n\,");
+	}
+}
+```
+## week03-2 迴文
+```cpp
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    char line[30];
+    scanf("%s",line);
+    int N=strlen(line);
+    int bad=0;
+    for(int i=0; i<N; i++)
+    {
+        if(line[i]!=line[N-1-i]) bad=1;
+    }
+    if(bad==1) printf("他不是迴文\n");
+    else printf("他是迴文\n");
+}
+```
