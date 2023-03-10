@@ -1264,3 +1264,67 @@ int main()
 
 }
 ```
+## week04-3 
+```cpp
+#include <stdio.h>
+int main()
+{
+    int a=10,b=20;
+    int * p1= &a;
+    int * p2= &b;
+
+    printf("p1指到的變數的值是%d\n",*p1);
+    printf("p2指到的變數的值是%d\n",*p2);
+
+    p1=p2;
+    printf("p1指到的變數的值是%d\n",*p1);
+    printf("p2指到的變數的值是%d\n",*p2);
+}
+```
+## week04-4
+```cpp
+#include <stdio.h>
+int main()
+{
+    int a=10,b=20;
+    int *p1,*p2;///和在一起的宣告法 都要打星星
+    printf("a:%d b:%d\n",a,b);
+
+    p1=&a;
+    *p1=99;
+    printf("a:%d,b:%d\n",a,b);
+
+    p2=p1;
+    *p2=77;
+    printf("a:%d b:%d\n",a,b);
+}
+```
+## week04-5
+```cpp
+#include <stdio.h>
+int main()
+{
+    int used[26]={0,0,0,0};///陣列宣告，沒寫齊全的話，都會補0
+    ///used[0] 對應'A'
+    ///used[1] 對應'B'
+    ///used[25] 對應'Z'
+
+    char c;
+    while(scanf("%c",&c)==1){
+        if(c>='A' && c<='Z'){
+            int i=c-'A';
+            used[i] ++;
+        }
+        if(c>='a' && c<='z'){
+            int i=c-'a';
+            used[i] ++;
+        }
+    }
+    int bad=0;///一開始還沒壞掉
+    for(int i=0; i<26; i++){
+        if(used[i]==0) bad=1;///有字母沒用到，死掉了
+    }
+    if (bad==0) printf("Yes");
+    else printf("No");
+}
+```
