@@ -1231,3 +1231,18 @@ int main()
     printf("c的家在%d\n",&c);
 }
 ```
+## week04-2 指標變數 poiner
+```cpp
+#include <stdio.h>
+int main()
+{
+        int a=10;
+        printf("a在哪裡? %d\n",&a);
+
+        int *p = &a;
+
+        printf("指標p心裡放的值是&a 也就是%d\n",p);
+        printf("p指到的那一個盒子的值是:%d\n",*p);
+
+}
+```
