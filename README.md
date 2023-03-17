@@ -1341,3 +1341,26 @@ int main()
     }
 }
 ```
+## week05-2 leetcode
+```cpp
+bool isPalindrome(int x) {
+        if(x<0) return false;
+
+        //x:1234567 r:0
+        //        7   7=0*10   +7
+        //       6   76=7*10   +6
+        //      5   765=76*10  +5
+        //     4   7654=765*10 +4
+        int x2=x;///x的分身，因為x會剝皮剝光光
+        long long int r=0;
+        while(x>0){//剝皮法
+            r=r*10+x%10;//取出x的個位數(剝皮)
+            //printf("x:%d r:%d\n",x,r);
+
+            x=x/10;
+    }
+    ///如果倒過來的結果r
+    if(r==x2) return true;
+    else return false;
+}
+```
