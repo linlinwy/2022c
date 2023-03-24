@@ -1406,4 +1406,4 @@ int main()
         fscanf(fin,"%s",line);
         printf("你讀到了%s\n",line);
 }
-```cpp
+```
