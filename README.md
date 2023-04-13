@@ -1462,3 +1462,90 @@ int main()
     }
 }
 ```
+## week08-1
+```cpp
+#include <stdio.h>
+#include <vector>
+using namespace std;
+int main()
+{
+    vector<int> a(3);
+    a[0]=100;
+    a[1]=101;
+    a[2]=102;
+    for(int i=0;i<3;i++){
+        printf("%d ",a[i]);
+    }
+}
+```
+## week08-2
+```cpp
+#include <stdio.h>
+#include <vector>
+using namespace std;
+int main()
+{
+    int a1[10]={9,8,7,1,2,3,6,5,4,0};
+    vector<int> a2(a1,a1+10);
+
+    for(int i=0; i<10; i++){
+        printf("%d ",a2[i]);
+    }
+}
+```
+## week08-3
+```cpp
+#include <stdio.h>
+#include <vector>
+using namespace std;
+int main()
+{
+    vector<int> a(2);
+    a[0]=100;
+    a[1]=101;
+    for(int i=0; i<a.size(); i++){
+        printf("%d ",a[i]);
+    }
+    printf("現在的a的大小是: %d\n",a.size());
+
+    a.push_back(102);
+    a.push_back(103);
+    a.push_back(0);
+    for(int i=0; i<a.size(); i++){
+        printf("%d ",a[i]);
+    }
+    printf("現在的a的大小是: %d\n",a.size());
+}
+```cpp
+## week08-4
+```cpp
+class Solution {
+public:
+    vector<int> runningSum(vector<int>&nums){
+        int N=nums.size();
+        vector<int> ans(N);
+
+        ans[0]=nums[0];
+        for(int i=1; i<N; i++){
+            ans[i]=ans[i-1]+nums[i];
+        }
+        return ans;
+    }
+}
+```
+## week08-5 等腰三角形
+```cpp
+#include <stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++){
+        
+        int space=n-i,star=i*2-1;
+        for(int k=1; k<space; k++)printf(" ");
+        for(int k=1; k<=star; k++) printf("*");
+        printf("\n");
+    }
+}
+```
