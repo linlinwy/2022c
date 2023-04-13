@@ -1516,7 +1516,7 @@ int main()
     }
     printf("現在的a的大小是: %d\n",a.size());
 }
-```cpp
+```
 ## week08-4
 ```cpp
 class Solution {
