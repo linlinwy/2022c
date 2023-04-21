@@ -1566,7 +1566,7 @@ char * mergeAlternately(char * word1,char * word2){
     return ans;
 }
 ```
-## week10-2 c++
+## week10-2 leetcode c++
 ```cpp
 class Solution{
 public:
