@@ -1580,3 +1580,24 @@ public:
     }
 };
 ```
+## week10-3
+int singleNumber(int* nums, int numsSize){
+    int ans=0;
+    for(int i=0;i<numsSize;i++){
+        ans=ans^nums[i];
+    }
+    return ans;
+};
+```
+## week10-4
+int hammingWeight(uint32_t n) {
+
+    int ans=0;
+    while(n>0){//數字還沒播完，就繼續做
+        int now=n%2;//撥一層皮
+        if(now==1) ans++;//撥下賴的皮有幾個1
+        n= n/2;//數字又便更小了
+    }
+    return ans;
+};
+```
