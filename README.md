@@ -1549,7 +1549,7 @@ int main()
     }
 }
 ```
-## week10-1 leetcode
+## week10-1 leetcode c
 ```cpp
 //指標就是陣列，陣列就是指標
 char * mergeAlternately(char * word1,char * word2){
@@ -1566,4 +1566,18 @@ char * mergeAlternately(char * word1,char * word2){
     ans[N]=0;//字串結尾
     return ans;
 }
+```
+## week10-2 c++
+```cpp
+class Solution{
+public:
+    string mergeAlternately(string word1, string word2){
+        string ans;//這樣就準備好記憶體了而且伸縮自如
+        for(int i=0;i<100;i++){
+            if(i<word1.length()) ans+= word1[i];
+            if(i<word2.length()) ans+= word2[i];
+        }
+        return ans;
+    }
+};
 ```
