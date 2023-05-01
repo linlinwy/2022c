@@ -1581,6 +1581,7 @@ public:
 };
 ```
 ## week10-3
+```cpp
 int singleNumber(int* nums, int numsSize){
     int ans=0;
     for(int i=0;i<numsSize;i++){
@@ -1600,4 +1601,52 @@ int hammingWeight(uint32_t n) {
     }
     return ans;
 };
+```
+## week11-1 
+```cpp
+int lastStoneWeight(int* stones, int N)
+{
+    while(1){
+        int a=stones[0],aI=0;
+        for(int i=0;i<N;i++){
+            if(stones[i]>a){
+                a=stones[i];
+                aI = i;
+            }
+        }
+        stones[aI]=0;
+        int b=stones[0],bI=0;
+        for(int i=0;i<N;i++){
+            if(stones[i]>b){
+                b=stones[i];
+                bI=i;
+            }
+        }
+        stones[bI]=0;
+        if(a==0 && b==0) return 0;
+        if(a!=0 && b==0) return a;
+        stones[aI]=a-b;
+    }
+    return 0;
+}
+```
+## week11-2
+```cpp
+bool isIsomorphic(char * s, char * t){
+    int N1=strlen(s),N2=strlen(t);
+    if(N1!=N2) return false;
+    char table1[256]={};
+    char table2[256]={};
+
+    for(int i=0;i<N1;i++){
+        char c1=s[i],c2=t[i];
+        if(table1[c1]==0 && table2[c2]==0){
+            table1[c1]=c2;
+            table2[c2]=c1;
+        }
+        if(table1[c1]!=c2) return false;
+        if(table2[c2]!=c1) return false;
+    }
+    return true;
+}
 ```
