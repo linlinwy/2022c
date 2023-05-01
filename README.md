@@ -1591,6 +1591,7 @@ int singleNumber(int* nums, int numsSize){
 };
 ```
 ## week10-4
+```cpp
 int hammingWeight(uint32_t n) {
 
     int ans=0;
