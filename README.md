@@ -1651,3 +1651,22 @@ bool isIsomorphic(char * s, char * t){
     return true;
 }
 ```
+## week12-1
+```cpp
+#include <stdio.h>
+int main()
+{
+    int a=99,b=33;
+    printf("%d%d\n",a,b);
+    ///int temp=a;
+    ///a=b;
+    ///b=temp;
+
+    a^=b; ///a=a^b; a現在有(a b)兩個靈魂 a b
+    b^=a; ///b=b^a; 意思是(b(a b))3靈魂削掉b,剩a
+    a^=b; ///a=a^b; ((a b) 削掉a剩下3個靈魂
+
+    printf("%d%d\n",a,b);
+
+}
+```
